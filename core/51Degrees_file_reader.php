@@ -28,6 +28,8 @@
  * http://msdn.microsoft.com/en-us/library/system.io.binarywriter.aspx
  */
 
+namespace FiftyoneDegrees;
+
 /**
  * Gets a bool from at the current position in the file.
  *
