@@ -1,5 +1,5 @@
 {
-    "name": "fiftyone-degrees/device-detection",
+    "name": "fiftyone-degrees/fiftyone-degrees",
     "license": "Mozilla Public License, v. 2.0",
     "description": "THE fastest and most accurate device detection",
     "authors": [
@@ -9,9 +9,11 @@
         }
     ],
     "autoload": {
-        "psr-0": {
-            "FiftyoneDegrees\\": "core/"
-        }
+        "files": [
+            "fiftyone-degrees/core/LinkedList.php",
+            "fiftyone-degrees/core/51Degrees_data_reader.php",
+            "fiftyone-degrees/core/51Degrees_file_reader.php"
+        ]
     },
     "require": {
         "php": ">=5.3"

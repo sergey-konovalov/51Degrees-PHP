@@ -26,8 +26,6 @@
  * Provides functionality for a linked list.
  */
 
-namespace FiftyoneDegrees\DataStructures;
-
 /**
  * Provides functionality for a linked list, allowing nodes to be added and
  * removed from an arbitrary place in the list while maintaining performance.
