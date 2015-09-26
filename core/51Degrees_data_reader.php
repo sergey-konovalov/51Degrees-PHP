@@ -33,6 +33,16 @@ if (isset($_fiftyone_degrees_data_file_path) == FALSE) {
   $_fiftyone_degrees_data_file_path = dirname(__FILE__) . '/51Degrees-Lite.dat';
 }
 
+global $_fiftyone_degrees_use_array_cache;
+if (isset($_fiftyone_degrees_use_array_cache) == FALSE) {
+    $_fiftyone_degrees_use_array_cache = TRUE;
+}
+
+global $_fiftyone_degrees_return_strings;
+if (isset($_fiftyone_degrees_return_strings) == FALSE) {
+    $_fiftyone_degrees_return_strings = TRUE;
+}
+
 function fiftyone_degrees_set_file_handle() {
   global $_fiftyone_degrees_data_file;
   global $_fiftyone_degrees_data_file_path;
@@ -41,6 +51,24 @@ function fiftyone_degrees_set_file_handle() {
   }
   $_fiftyone_degrees_data_file = fopen($_fiftyone_degrees_data_file_path, 'rb');
   
+}
+
+function fiftyone_degrees_set_params(array $params) {
+    global $_fiftyone_degrees_use_array_cache;
+    global $_fiftyone_degrees_data_file_path;
+    global $_fiftyone_degrees_return_strings;
+
+    if (isset($params['use_array_cache'])) {
+        $_fiftyone_degrees_use_array_cache = $params['use_array_cache'];
+    }
+
+    if (isset($params['data_file_path'])) {
+        $_fiftyone_degrees_data_file_path = $params['data_file_path'];
+    }
+
+    if (isset($params['return_strings'])) {
+        $_fiftyone_degrees_return_strings = $params['return_strings'];
+    }
 }
 
 /**
