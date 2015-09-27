@@ -10,9 +10,9 @@
     ],
     "autoload": {
         "files": [
-            "fiftyone-degrees/core/LinkedList.php",
-            "fiftyone-degrees/core/51Degrees_data_reader.php",
-            "fiftyone-degrees/core/51Degrees_file_reader.php"
+            "core/LinkedList.php",
+            "core/51Degrees_data_reader.php",
+            "core/51Degrees_file_reader.php"
         ]
     },
     "require": {
