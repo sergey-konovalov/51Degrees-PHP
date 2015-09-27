@@ -9,9 +9,9 @@
         }
     ],
     "autoload": {
-        "files": [
-            "core/51Degrees_data_reader.php"
-        ]
+	"psr-4": {
+	    "FiftyoneDegrees\\": "core/"
+	}
     },
     "require": {
         "php": ">=5.3"

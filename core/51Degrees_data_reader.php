@@ -25,6 +25,8 @@
  * Provides detection functionality by interfacing with the file reader methods.
  */
 
+namespace FiftyoneDegrees;
+
 require_once '51Degrees_file_reader.php';
 require_once 'LinkedList.php';
 
